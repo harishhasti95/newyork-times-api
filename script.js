@@ -11,7 +11,7 @@ function setAttributesInEle(element, attr) {
     }
 }
 var container = createClass('div', 'container');
-var nav = createClass('nav', 'navbar navbar-expand-lg navbar-dark bg-dark');
+var navigation = createClass('nav', 'navbar navbar-expand-lg navbar-dark bg-dark');
 var button = createClass('button', 'navbar-toggler');
 setAttributesInEle(button, {
     'type': 'button',
@@ -39,7 +39,7 @@ for (var i = 0; i < 12; i++) {
 
 collapse.appendChild(navbar);
 button.appendChild(span);
-nav.append(button, collapse);
+navigation.append(button, collapse);
 container.appendChild(nav);
 document.body.append(container);
 
